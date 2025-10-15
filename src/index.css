@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-panel-dark {
+    @apply bg-black/10 backdrop-blur-md border border-white/10;
+  }
+  
+  .neumorphic-light {
+    @apply bg-gray-100 shadow-neumorphic-light;
+  }
+  
+  .neumorphic-dark {
+    @apply bg-gray-800 shadow-neumorphic-dark;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all duration-300;
+  }
+  
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-glass;
+  }
+  
+  .card-neumorphic {
+    @apply bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 shadow-neumorphic-light dark:shadow-neumorphic-dark;
+  }
+}
