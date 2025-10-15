@@ -237,7 +237,9 @@ const Monetization = () => {
                 </div>
             </div>
         </div>
-    )
+    
+
+)
 }
 
 
